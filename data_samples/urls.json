@@ -1,0 +1,25 @@
+{
+    "npm": {
+        "base62": {
+            "index.json": "https://registry.npmjs.org/base62",
+            "1.2.0": {
+                "index.json": "https://registry.npmjs.org/base62/1.2.0"
+            }
+        }
+    },
+    "nuget": {
+        "discord.net": {
+            "index.json": "https://api.nuget.org/v3/registration5-semver1/discord.net/index.json",
+            "3.9.0.json": "https://api.nuget.org/v3/registration5-semver1/discord.net/3.9.0.json",
+            "discord.net.3.9.0.json": "https://api.nuget.org/v3/catalog0/data/2022.12.23.15.42.02/discord.net.3.9.0.json"
+        }
+    },
+    "pypi": {
+        "supabase": {
+            "index.json": "https://pypi.org/pypi/supabase/json",
+            "0.7.1": {
+                "index.json": "https://pypi.org/pypi/supabase/0.7.1/json"
+            }
+        }
+    }
+}
