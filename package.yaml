@@ -1,0 +1,27 @@
+---
+title: Package
+type: object
+description: A schema that defines the static metadata of an open source package.
+properties:
+  name:
+    type: string
+    description: The name of the package.
+  namespace:
+    type: string
+    description: The namespace of the package.
+  license:
+    type: string
+    description: The package's license.
+  description: # readme for NPM, not description, description we would define as summary.
+    type: string
+    description: A description of the package. Sometimes is the readme.
+  summary: # summary in NuGet is deprecated. description in NPM is the summary.
+    type: string
+    description: A summary of the package. Should be short.
+  keywords:
+    description: Keywords used to describe the package
+    type: array # Allowed to be empty.
+    items:
+      type: string
+required:
+- name
