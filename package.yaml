@@ -20,8 +20,11 @@ properties:
     description: A summary of the package. Should be short.
   keywords:
     description: Keywords used to describe the package
-    type: array # Allowed to be empty.
+    type: array
     items:
       type: string
+    minItems: 0
+  author:
+    $ref: '#/User'
 required:
 - name
