@@ -15,6 +15,31 @@ properties:
   license:
     type: string
     description: The package's license.
+  author:
+    type: string
+    description: The author of the package. 
+    package manager notes: pypi - "author"; npm - "author.name"; cargo - "user.name"
+  author contact info:
+    type: string
+    description: The contact information for the author of the package.
+    package manager notes: pypi - "author_email"; npm - "author.email"; cargo - "user.url"
+  download url:
+    type: string array
+    description: A list of download urls for the package version.
+    package manager notes: pypi - "urls.url"; nuget - "packageContent"; npm - "dist.tarball"; cargo - "dl_path"
+  homepage:
+    type: string
+    description: The home page for the package version on the package registry. 
+    package manager notes: pypi - "home_page"; nuget - "catalogEntry" or "registration"; npm - "homepage"
+  yanked/unpublished:
+    type: boolean
+    description: A flag indicating whether the package version was yanked or unpublished.
+    package manager notes: pypi - "yanked"; nuget - "listed"; cargo - "yanked"
+  publish time:
+    type: datetime
+    description: The time the package version was first published.
+    package manager notes: pypi - "urls.upload_time"; nuget - "published"; cargo - "audit_actions.time" (where action == "publish")
+
 required:
 - name
 - version
